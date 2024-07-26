@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url('./images/photo-1436491865332-7a61a109cc05.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: lightcoral;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+main {
+   border-radius: 8px;
+}
+
+#about-us { 
+    padding: 2rem;  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+.About-content {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url('./images/photo-1436491865332-7a61a109cc05.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.About-left, .About-right {
+    flex: 1;
+    padding: 1rem;
+}
+.About-right{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.About-right p{
+    text-align: center;
+    padding: 20px;
+}
+.About-right h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: lightcoral;
+}
+.About-right ul{
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

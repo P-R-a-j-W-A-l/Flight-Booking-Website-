@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url('./images/photo-1436491865332-7a61a109cc05.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.register-container{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url('./images/photo-1436491865332-7a61a109cc05.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.register-container h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: lightcoral;
+}
+.input-group{
+    margin-bottom: 15px;
+}
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+.register-button{
+    width: 50%;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.register-button:hover{
+    background-color: rgba(91, 157, 219,  0.747);
+}
+p{
+    margin-top: 20px;
+    color: wheat;
+}
+p a{
+    color: lightseagreen;
+    text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+}

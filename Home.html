@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">Flight Booking webp</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+
+        </ul>
+    </nav>
+        <div class="Hero">       
+            <div class="hero-content">
+                <h1>Welcome to Flight Booking Website</h1>
+                <p>Compare Flight prices and save on your next trip!"</p>
+                <button class="hero-button" onclick="showBookingForm()">Booking Details</button>
+        </div>
+    </div>
+        <section id="booking-section" class="booking-section hidden">
+            <h2>Booking Details</h2>
+            <form class="booking-form">
+                <input type="text" placeholder="From (Source)" class="booking-input">
+                <input type="text" placeholder="To (Destination)" class="booking-input">
+                <input type="date" placeholder="Departure Date" class="booking-input">
+                <div class="time-input">
+                    <input type="time" class="booking-input">
+                    <select class="time-period">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <label class="booking-label">Arrival Time</label>
+                
+                <div class="time-input">
+                    <input type="time" class="booking-input">
+                    <select class="time-period">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <label class="booking-label">Return Time</label>
+                <select class="booking-input">
+                    <option value="" disabled selected>Preferred Airline</option>
+                    <option value="indigo">IndiGo</option>
+                    <option value="flyeasy">Fly Easy</option>
+                    <option value="airfrance">Air France</option>
+                    <option value="airasia">Air Asia</option>
+                </select>
+                <button type="button" class="booking-button">Booking</button>
+            </form>
+        </section>
+    
+        <div class="flights">
+            <h1>Our Flights</h1>
+            <div class="flights-container">
+                <div class="flights-container-grid">
+                    <div class="flights-img">
+                        <img src="./images/list-of-airlines-in-india1.png" alt="">
+                    </div>
+                    <h3>Airasla</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button onclick="toggleDetails(this)">View Details</button>
+                    <div class="flight-details" style="display: none;">
+                        <p>Duration: 3h 30m</p>
+                        <p>Stops: Min-stop</p>
+                        <p>Class: Economy</p>
+                    </div>
+                    <div class="price">
+                        <p>Price: $100</p>
+                    </div>
+                </div>
+                <div class="flights-container-grid">
+                    <div class="flights-img">
+                        <img src="./images/fly-easy-gq_0.webp" alt="">
+                    </div>
+                    <h3>Fly easy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+                <div class="flight-details" style="display: none;">
+                    <p>Duration: 2h 00m</p>
+                    <p>Stops: Non-stop</p>
+                    <p>Class: Economy</p>
+                </div>
+                <div class="price">
+                    <p>Price: $250</p>
+                </div>
+                </div>
+                <div class="flights-container-grid">
+                    <div class="flights-img">
+                        <img src="./images/Air-france-Airbus-A380.webp" alt="">
+                    </div>
+                    <h3>Airfrance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+                <div class="flight-details" style="display: none;">
+                    <p>Duration: 2h 30m</p>
+                    <p>Stops: Non-stop</p>
+                    <p>Class: Economy</p>
+                </div>
+                <div class="price">
+                    <p>Price: $350</p>
+                </div>
+                </div>
+                <div class="flights-container-grid">
+                    <div class="flights-img">
+                        <img src="./images/11570831503_32f056625e_b_20181218111158.jpg" alt="">
+                    </div>
+                    <h3>Indigo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <button onclick="toggleDetails(this)">View Details</button>
+            <div class="flight-details" style="display: none;">
+                <p>Duration: 2h 30m</p>
+                <p>Stops: Non-stop</p>
+                <p>Class: Economy</p>
+            </div>
+            <div class="price">
+                <p>Price: $150</p>
+            </div>
+        </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <section class="About-us" id="About">
+            <h1>About Us</h1>
+            <div class="About-content">
+                <div class="About-left">
+                    <img src="./images/feb15polic_d.webp" alt="" width="600px" height="500px">
+                </div>
+                <div class="About-right">
+                    <h2>Welcome To Our Website</h2>
+                   <p> we have been committed to providing top-notch services and unparalleled experiences to our passengers.</p>
+                    <p>Our fleet of modern aircraft is equipped with the latest technology and amenities to ensure a smooth and enjoyable journey. With a team of dedicated professionals, we strive to deliver the highest level of customer satisfaction.</p>
+                    <p>We believe in continuous improvement and innovation, which drives us to expand our network and enhance our services. Thank you for choosing Airline Company, and we look forward to serving you.</p>
+                    <button class="button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="button-container" id="services">
+            <a href="services.html" class="button">Explore Our Services</a>
+        </div>
+
+       
+
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h2>Address</h2>
+                            <p>Bangalore, Rajajinagara</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h2>Email</h2>
+                            <p><a href="mailto:prajju8861@gmail.com">prajju8861@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h2>Phone</h2>
+                            <p><a href="tel:+919964326175">9964326175</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form onsubmit="sendEmail(); return false;">
+                        <h3>Send Message</h3>
+                        <div class="inputbox">
+                            <input type="text" name="name" placeholder="Full Name" required="required">
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" name="email" placeholder="Email" required="required">
+                        </div>
+                        <div class="inputbox">
+                            <textarea name="message" placeholder="Text your message..." required="required"></textarea>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section-links">
+                    <h3>Footer Section</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#Contact Us">Contact Us</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bengalore Rajajinagara</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> prajju8861@gmail.com</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> 9964326175</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flight Booking. All Rights Reserved.</p>
+            </div>
+        </div>
+        
+      
+        
+        </body>
+        </html>
+        
+ 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="flight.js"></script>
+    
+</body>
+
+</html>
